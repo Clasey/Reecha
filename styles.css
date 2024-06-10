@@ -1,0 +1,241 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+header, footer, main {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header styles */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 30px;
+}
+
+.header-container .logo img {
+    height: 50px;
+    display: inline;
+}
+
+.navbarTop ul {
+    display: flex;
+    gap: 20px;
+}
+
+.navbarTop a {
+    color: #fff;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.navbarTop a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Header content styles */
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #0071BC;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.header-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.header-content .text-container {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.header-content .text-box {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.header-content .text-box:hover {
+    transform: translateY(-10px);
+}
+
+.header-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(#0071BC, #0071BC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+.header-content .main_image {
+    z-index: 1;
+    max-width: 40%;
+}
+
+.header-content .main_image img {
+    display: none;
+}
+
+/* Main styles */
+main h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+main .overview-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+main .overview-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+main .overview-box img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #0071BC;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer div img {
+    max-width: 150px;
+    margin: 10px;
+}
+
+footer .navbarDown ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .navbarDown a {
+    color: #fff;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+footer .navbarDown a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+footer div a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .header-content .text-container, .header-content .main_image {
+        max-width: 100%;
+    }
+
+    .header-content h2 {
+        font-size: 2em;
+    }
+
+    main .overview-container {
+        flex-direction: column;
+    }
+
+    main .overview-box {
+        margin-bottom: 20px;
+    }
+}

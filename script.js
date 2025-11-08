@@ -1,25 +1,19 @@
-let slides = document.querySelectorAll('.slide');
-let currentIndex = 0;
-const nextBtn = document.querySelector('.next');
-const prevBtn = document.querySelector('.prev');
+let slideIndex = 0;
+showSlides();
 
-function showSlide(index) {
-    slides.forEach(slide => slide.classList.remove('active'));
-    slides[index].classList.add('active');
+function showSlides() {
+    let slides = document.getElementsByClassName("slides");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1; }
+    if(slides.length > 0) slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
 }
 
-nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % slides.length;
-    showSlide(currentIndex);
-});
-
-prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    showSlide(currentIndex);
-});
-
-// Auto slide every 5 seconds
-setInterval(() => {
-    currentIndex = (currentIndex + 1) % slides.length;
-    showSlide(currentIndex);
-}, 5000);
+// Optional: Add next/prev functionality
+function plusSlides(n) {
+    slideIndex += n - 1;
+    showSlides();
+}

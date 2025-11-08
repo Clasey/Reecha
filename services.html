@@ -3,117 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+    <title>Services - REECHA Inc.</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header-container">
+    <header class="header-container">
         <div class="logo">
-            <img src="_images/updatedLogo.png" alt="Your Logo">
+            <img src="_images/updatedLogo.png" alt="REECHA Inc. Logo">
         </div>
         <nav class="navbarTop">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutus.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
                 <li><a href="policies.html">Policies</a></li>
             </ul>
         </nav>
-    </div>
-
-    <header>
-        <div class="header-content">
-            <div class="text-container">
-                <h1>Our Services</h1>
-                <p>We offer a wide range of professional services tailored to meet your needs.</p>
-            </div>
-            <div class="main_image">
-                <img src="_images/services-image.jpg" alt="Services image">
-            </div>
-        </div>
     </header>
-    
-    <main>
-        <h1>What We Offer</h1>
-        <div class="overview-container">
-            <div class="overview-box">
-                <h2>Assurance Engagements</h2>
-                <p>» Regulatory Audits 
-                    » Performance information audits 
-                    » IT audits 
-                    » Assurance 
-                    » Bookkeeping 
-                    » Accounting 
-                    » Taxation compliance and advisory 
-                    » Company secretarial 
-                    » BEE verification 
-                    » Business support 
-                </p>
-            </div>
-            <div class="overview-box">
-                <h2>Governance Risk and Compliance</h2>
-                <p>» Internal audit 
-                    » Risk management 
-                    » Special investigations 
-                    » Internal control enhancement 
-                    » Information technology audits 
-                </p>
-            </div>
-            <div class="overview-box">
-                <h2>Forensics and Special Investigations</h2>
-                <p>
-                    » This is tailored to client needs 
-                    » Hard drive imaging 
-                    » Mobile device forensics 
-                    » Special Investigations 
-                </p>
-            </div>
-            <div class="overview-box">
-                <h2>Consulting and Advisory</h2>
-                <p>
-                    » Municipalities 
-                    » Departments and public entities 
-                    » Private sector consulting 
-                    » GRAP implementation 
-                    » Audit readiness 
-                    » Performance information  
-                    » Supplier chain Management
-                    » SAP Independent Project Assurance 
-                </p>
-            </div>
-            <div class="overview-box">
-                <h2>Technology Risk Services</h2>
-                <p>
-                    » IT General controls 
-                    » Business process advisory 
-                    » Consulting 
-                    » Application controls review 
-                    » Data Analytics 
-                    » COBIT Maturity Assessments 
-                    » ISAE3402 Review 
-                    » Internal audit: 
-                    * Core-sourcing 
-                    * Out-sourcing 
-                </p>
-            </div>
+
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1>Our Services</h1>
+            <p>Comprehensive solutions for assurance, risk, consulting, and technology services.</p>
         </div>
+        <div class="hero-slideshow">
+            <div class="slide active"><img src="_images/services-slide1.jpg" alt="Services Slide 1"></div>
+            <div class="slide"><img src="_images/services-slide2.jpg" alt="Services Slide 2"></div>
+            <div class="slide"><img src="_images/services-slide3.jpg" alt="Services Slide 3"></div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+    </section>
+
+    <main>
+        <section class="overview-section">
+            <h2>What We Offer</h2>
+            <div class="overview-container">
+                <div class="overview-box">
+                    <img src="_images/service1.jpg" alt="Assurance">
+                    <h3>Assurance Engagements</h3>
+                    <p>Regulatory audits, performance audits, IT audits, bookkeeping, accounting, taxation, BEE verification, company secretarial, business support.</p>
+                </div>
+                <div class="overview-box">
+                    <img src="_images/service2.jpg" alt="GRC">
+                    <h3>Governance, Risk & Compliance</h3>
+                    <p>Internal audit, risk management, special investigations, internal control enhancement, IT audits.</p>
+                </div>
+                <div class="overview-box">
+                    <img src="_images/service3.jpg" alt="Forensics">
+                    <h3>Forensics & Special Investigations</h3>
+                    <p>Tailored client investigations, hard drive imaging, mobile forensics, and other specialized investigations.</p>
+                </div>
+                <div class="overview-box">
+                    <img src="_images/service4.jpg" alt="Consulting">
+                    <h3>Consulting & Advisory</h3>
+                    <p>Municipal, public, and private sector consulting, GRAP implementation, audit readiness, performance info, SAP project assurance.</p>
+                </div>
+                <div class="overview-box">
+                    <img src="_images/service5.jpg" alt="Technology Risk">
+                    <h3>Technology Risk Services</h3>
+                    <p>IT controls, business process advisory, data analytics, COBIT assessments, ISAE3402 review, internal audit outsourcing.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <div>
-            <h2>Our Clientele</h2>
-            <img src="_images/REGCOM-Picture-updated.png" alt="">
-            <img src="_images/EC-Picture-updated.png" alt="">
-            <img src="_images/LOVEDALE-TVET-COLLEGE-Picture-updated.jpg" alt="">
-            <img src="_images/babetli-group-Picture-updated.png" alt="">
+        <div class="footer-clientele">
+            <h2>Our Clients</h2>
+            <img src="_images/REGCOM-Picture-updated.png" alt="Client 1">
+            <img src="_images/EC-Picture-updated.png" alt="Client 2">
+            <img src="_images/LOVEDALE-TVET-COLLEGE-Picture-updated.jpg" alt="Client 3">
+            <img src="_images/babetli-group-Picture-updated.png" alt="Client 4">
         </div>
-
-        <div>
-            <a href="https://www.linkedin.com/company/reecha-inc/about/"><img src="_images/linkedIn-picture.svg" alt="LinkedIn page"></a>
-            <a href="https://www.facebook.com/people/Reecha-INC/61551045196649/?mibextid=ZbWKwL"><img src="_images/facebook-picture.svg" alt="Facebook page"></a>
+        <div class="footer-social">
+            <a href="#"><img src="_images/linkedIn-picture.svg" alt="LinkedIn"></a>
+            <a href="#"><img src="_images/facebook-picture.svg" alt="Facebook"></a>
         </div>
-
         <nav class="navbarDown">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -123,8 +90,8 @@
                 <li><a href="policies.html">Policies</a></li>
             </ul>
         </nav>
-
         <p>&copy; 2024 REECHA Inc. All Rights Reserved</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

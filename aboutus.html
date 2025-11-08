@@ -7,72 +7,92 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header-container">
+    <header class="header-container">
         <div class="logo">
-            <img src="_images/updatedLogo.png" alt="Your Logo">
+            <img src="_images/updatedLogo.png" alt="REECHA Inc. Logo">
         </div>
         <nav class="navbarTop">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="aboutus.html">About</a></li>
+                <li><a href="aboutus.html" class="active">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
                 <li><a href="policies.html">Policies</a></li>
             </ul>
         </nav>
-    </div>
-
-    <header>
-        <div class="header-content">
-            <div class="text-container">
-                <h1>About us</h1>
-                <p>Good corporate citizen with unwavering commitment to quality.</p>
-            </div>
-            <div class="main_image">
-                <img src="_images/jeffrey-blum-7-gaPkhIgqs-unsplash.jpg" alt="Services image">
-            </div>
-        </div>
     </header>
 
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1>About REECHA Inc.</h1>
+            <p>Committed to professional excellence, integrity, and client satisfaction.</p>
+        </div>
+        <div class="hero-slideshow">
+            <div class="slide active"><img src="_images/about-slide1.jpg" alt="About Slide 1"></div>
+            <div class="slide"><img src="_images/about-slide2.jpg" alt="About Slide 2"></div>
+            <div class="slide"><img src="_images/about-slide3.jpg" alt="About Slide 3"></div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+    </section>
+
     <main>
-        <div class="about-section">
-            <h1>Our Leardership</h1>
+        <section class="content-with-image">
+            <div class="text">
+                <h2>Our Story</h2>
+                <p>REECHA Inc. was founded to deliver high-quality auditing, consulting, and advisory services. We focus on empowering organizations and ensuring compliance with international standards.</p>
+            </div>
+            <div class="image">
+                <img src="_images/about-story.jpg" alt="Our Story">
+            </div>
+        </section>
+
+        <section class="content-with-image reverse">
+            <div class="text">
+                <h2>Our Team</h2>
+                <ul>
+                    <li>Chartered Accountants (CAs)</li>
+                    <li>Certified Internal Auditors (CIAs)</li>
+                    <li>Certified Fraud Examiners (CFEs)</li>
+                    <li>Certified Information Systems Auditors (CISAs)</li>
+                </ul>
+            </div>
+            <div class="image">
+                <img src="_images/about-team.jpg" alt="Our Team">
+            </div>
+        </section>
+
+        <section class="overview-section">
+            <h2>Our Values</h2>
             <div class="overview-container">
                 <div class="overview-box">
-                    <h2>
-                        Edson Chawaremera CA (SA), RA, MBA Managing Partner
-                    </h2>
-                    <div>
-                        <img src="_images/E.Chawaremera-Picture-updated.jpg" alt="">
-                        <p>Edson is a Chartered Accountant with over ten years in public practice. Through his leadership, the firm has now expanded to two provinces and is currently establishing an office in Gauteng. He has managed to grow the firm’s national clientele base exponentially. Edson believes in empowerment and development of our people. Edson is in charge of business development, quality assurance and client liaison. His expertise and industry knowledge encompasses both the private and public sector. He is a beacon for excellence in professional services, and a source of inspiration for young people aspiring to be professionals. He is a member of the South African Institute of Chartered Accountants (SAICA) and the Independent Regulatory Board of Auditors (IRBA). He is currently studying towards a Masters in Business Administration. He has also successfully completed level 1 of the CFA Charter.</p>
-                    </div>
+                    <img src="_images/value1.jpg" alt="Integrity">
+                    <p><strong>Integrity:</strong> Upholding ethical standards in every engagement.</p>
                 </div>
                 <div class="overview-box">
-                    <h2>
-                        Darlington Mudzimba CA (SA), RA Chief Executive Officer 
-                    </h2>
-                    <img src="_images/D.Mudzimba-Picture-updated.jpg" alt="">
-                    <p>Darlington is a Chartered Accountant with over nine years of experience in both private and public sector. He completed his articles with KPMG before joining Meodi Chartertered Accountants, Mazars, Deloitte, SAICA and BCX. He believes in the spirit of uplifting, mentoring, training and supporting aspiring Chartered Accountants in achieving their dreams. Darlington is the Chief Executive officer and is in charge of the Northern Cape province as well as Governance, Risk and Compliance division. He is a member of the South African Institute of Chartered Accountants (SAICA) and the Independent Regulatory Board of Auditors (IRBA), He has a Masters in Management of Finance and Investment. He successfully completed level 1 and level 2 of the CFA Charter. </p>
+                    <img src="_images/value2.jpg" alt="Professionalism">
+                    <p><strong>Professionalism:</strong> Delivering high-quality services with expertise and diligence.</p>
+                </div>
+                <div class="overview-box">
+                    <img src="_images/value3.jpg" alt="Innovation">
+                    <p><strong>Innovation:</strong> Bringing creative solutions to complex challenges.</p>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
-        <div>
-            <h2>Our Clientele</h2>
-            <img src="_images/REGCOM-Picture-updated.png" alt="">
-            <img src="_images/EC-Picture-updated.png" alt="">
-            <img src="_images/LOVEDALE-TVET-COLLEGE-Picture-updated.jpg" alt="">
-            <img src="_images/babetli-group-Picture-updated.png" alt="">
+        <div class="footer-clientele">
+            <h2>Our Clients</h2>
+            <img src="_images/REGCOM-Picture-updated.png" alt="Client 1">
+            <img src="_images/EC-Picture-updated.png" alt="Client 2">
+            <img src="_images/LOVEDALE-TVET-COLLEGE-Picture-updated.jpg" alt="Client 3">
+            <img src="_images/babetli-group-Picture-updated.png" alt="Client 4">
         </div>
-
-        <div>
-            <p>FOLLOW US ON</p>
-            <a href="https://www.linkedin.com/company/reecha-inc/about/"><img src="_images/linkedIn-picture.svg" alt="LinkedIn page"></a>
-            <a href="https://www.facebook.com/people/Reecha-INC/61551045196649/?mibextid=ZbWKwL"><img src="_images/facebook-picture.svg" alt="Facebook page"></a>
+        <div class="footer-social">
+            <a href="#"><img src="_images/linkedIn-picture.svg" alt="LinkedIn"></a>
+            <a href="#"><img src="_images/facebook-picture.svg" alt="Facebook"></a>
         </div>
-
         <nav class="navbarDown">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -82,8 +102,8 @@
                 <li><a href="policies.html">Policies</a></li>
             </ul>
         </nav>
-
         <p>&copy; 2024 REECHA Inc. All Rights Reserved</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

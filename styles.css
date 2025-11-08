@@ -46,6 +46,7 @@ img {
 }
 
 .navbarTop ul {
+    margin-right: 470px;
     display: flex;
     gap: 50px;
     font-size: 1.1em;
@@ -123,6 +124,7 @@ img {
 }
 
 .content-with-image .text h2 {
+    border-bottom: 3px solid #FF6600;
     font-size: 2em;
     margin-bottom: 15px;
     color: #0071BC;

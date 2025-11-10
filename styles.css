@@ -316,9 +316,9 @@ footer p {
     .navbarTop ul {
         flex-direction: column;
         position: relative;
-        top: 30px; /* below header */
+        margin-right: 80px;
+        top: 20px; /* below header */
         left: 0;
-        margin-right: px;
         background-color: #fff;
         display: none; /* hide by default */
         text-align: center;
@@ -336,6 +336,7 @@ footer p {
     }
 
     .hamburger {
+        margin-right: 10px;
         display: flex;
     }
 }

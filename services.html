@@ -20,6 +20,11 @@
                 <li><a href="contacts.html">Contacts</a></li>
                 <li><a href="policies.html">Policies</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
@@ -97,5 +102,16 @@
         </div>
         <p>&copy; 2024 REECHA Inc. All Rights Reserved</p>
     </footer>
+
+     <!-- Hamburger Script -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('toggle');
+        });
+    </script>
 </body>
 </html>

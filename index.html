@@ -10,16 +10,23 @@
     <!-- Header -->
     <header class="header-container">
         <div class="logo">
-            <img src="images/reecha logo.jpg" alt="REECHA Inc. Logo">
+            <a href="index.html">
+                <img src="images/updatedLogo.png" alt="REECHA Inc. Logo">
+            </a>
         </div>
         <nav class="navbarTop">
-            <ul>
+            <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="aboutus.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
                 <li><a href="policies.html">Policies</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
@@ -103,5 +110,16 @@
         </div>
         <p>&copy; 2024 REECHA Inc. All Rights Reserved</p>
     </footer>
+
+    <!-- Hamburger Script -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('toggle');
+        });
+    </script>
 </body>
 </html>

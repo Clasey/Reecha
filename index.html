@@ -22,12 +22,12 @@
                 <li><a href="contacts.html">Contacts</a></li>
                 <li><a href="policies.html">Policies</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </nav>
+        <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+        </div>
     </header>
 
     <!-- Hero Section -->
@@ -114,12 +114,13 @@
     <!-- Hamburger Script -->
     <script>
         const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
+        const navMenu = document.querySelector('.navbarTop ul');
 
         hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.classList.toggle('toggle');
+        hamburger.classList.toggle('toggle'); // hamburger animation
+        navMenu.classList.toggle('active'); // show/hide menu
         });
     </script>
+
 </body>
 </html>

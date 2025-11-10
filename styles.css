@@ -309,36 +309,37 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    .hero-text h1 {
-        font-size: 2.5em;
-    }
-    .hero-text p {
-        font-size: 1.2em;
+    .navbarTop {
+        position: relative;
     }
 
     .navbarTop ul {
-        gap: 0;
-        font-size: 1em;
         flex-direction: column;
-        position: absolute;
-        top: 65px;
+        position: relative;
+        top: 30px; /* below header */
         left: 0;
-        right: 0;
+        margin-right: px;
         background-color: #fff;
-        display: none;
+        display: none; /* hide by default */
         text-align: center;
-        padding: 15px 0;
+        padding: 5px 0;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        z-index: 90; /* make sure it’s above content */
     }
 
     .navbarTop ul.active {
         display: flex;
     }
 
+    .navbarTop ul li {
+        margin: 1px 0;
+    }
+
     .hamburger {
         display: flex;
     }
 }
+
 
 @media (max-width: 480px) {
     .hero-text h1 {
